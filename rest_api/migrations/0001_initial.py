@@ -39,7 +39,7 @@ class Migration(migrations.Migration):
                 ('talent_type', models.CharField(max_length=64)),
                 ('talent_name', models.CharField(max_length=64)),
                 ('talent_desc', models.TextField()),
-                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='talents', to='api.character')),
+                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='talents', to='rest_api.character')),
             ],
         ),
         migrations.CreateModel(
@@ -49,7 +49,7 @@ class Migration(migrations.Migration):
                 ('con_number', models.PositiveSmallIntegerField()),
                 ('con_name', models.CharField(max_length=64)),
                 ('con_desc', models.TextField()),
-                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='constellations', to='api.character')),
+                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='constellations', to='rest_api.character')),
             ],
         ),
         migrations.AddConstraint(
