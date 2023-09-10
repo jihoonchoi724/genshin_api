@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "genshin_apidjango_app_name/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "genshin_api/wsgi.py"
+    }
+  ]
+}
