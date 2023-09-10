@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('api', '0004_alter_character_vision'),
+        ('rest_api', '0004_alter_character_vision'),
     ]
 
     operations = [

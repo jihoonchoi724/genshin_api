@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from api.models import Character
-from api.serializers import CharacterBasicSerializer, CharacterSerializer
+from rest_api.models import Character
+from rest_api.serializers import CharacterBasicSerializer, CharacterSerializer
 from rest_framework import viewsets
 from rest_framework import permissions
 from rest_framework.views import APIView

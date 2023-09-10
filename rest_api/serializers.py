@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from api.models import Character, Talent, Constellation
+from rest_api.models import Character, Talent, Constellation
 
 class CharacterBasicSerializer(serializers.ModelSerializer):
   class Meta:
